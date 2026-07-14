@@ -4,7 +4,7 @@ const db = require("./db");
 const app = express();
 
 app.get("/",(req,res)=>{
-    res.send("Backend Running");
+    res.send("Welcome to Docker compose project");
 });
 
 app.get("/users",(req,res)=>{
