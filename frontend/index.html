@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Docker Compose</title>
+
+</head>
+
+<body>
+
+<h1>Frontend Running</h1>
+
+<button onclick="load()">Get Backend</button>
+
+<p id="demo"></p>
+
+<script>
+
+async function load(){
+
+const data=await fetch('/api');
+
+const res=await data.text();
+
+document.getElementById("demo").innerHTML=res;
+
+}
+
+</script>
+
+</body>
+
+</html>
